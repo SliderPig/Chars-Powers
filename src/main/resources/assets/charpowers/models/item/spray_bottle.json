@@ -1,0 +1,26 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "charpowers:item/spray_bottle"
+ },
+ "overrides": [
+  {
+   "predicate": {
+    "charpowers:liquid": 1
+   },
+   "model": "charpowers:item/spray_bottle_water"
+  },
+  {
+   "predicate": {
+    "charpowers:liquid": 2
+   },
+   "model": "charpowers:item/spray_bottle_lava"
+  },
+  {
+   "predicate": {
+    "charpowers:liquid": 3
+   },
+   "model": "charpowers:item/spray_bottle_milk"
+  }
+ ]
+}

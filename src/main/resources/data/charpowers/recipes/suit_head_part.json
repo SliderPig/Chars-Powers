@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palladium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gravecore"
+    }
+  ],
+  "category": "equipment",
+  "pattern": [
+    "VVV",
+    "VMV",
+    " S "
+  ],
+  "key": {
+    "V": {
+      "item": "palladium:vibranium_ingot"
+    },
+    "M": {
+      "item": "grave.core:advanced_motherboard"
+    },
+    "S": {
+      "item": "grave.core:screen"
+    }
+  },
+  "result": {
+    "item": "charpowers:suit_head_part"
+  }
+}

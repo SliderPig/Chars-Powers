@@ -1,0 +1,7 @@
+{
+  "type": "charpowers:kings_rock",
+  "biomes": "#charpowers:has_structure/kings_rock",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

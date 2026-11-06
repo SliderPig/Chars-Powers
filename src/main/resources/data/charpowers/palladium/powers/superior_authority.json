@@ -1,0 +1,275 @@
+{
+  "name": {
+    "translate": "power.charpowers.superior_authority"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/superior_authority.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "stop": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.stop"
+      },
+      "description": {
+        "translate": "ability.charpowers.stop.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/stop.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        -2.5,
+        0
+      ]
+    },
+    "no_jump": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.no_jump"
+      },
+      "description": {
+        "translate": "ability.charpowers.no_jump.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/no_jump.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        -2.5,
+        1
+      ]
+    },
+    "freeze": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.freeze"
+      },
+      "description": {
+        "translate": "ability.charpowers.freeze.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/freeze.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "stop"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:superior_authority",
+            "level": 25
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        -1.5,
+        0
+      ]
+    },
+    "kneel": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.kneel"
+      },
+      "description": {
+        "translate": "ability.charpowers.kneel.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/kneel.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "freeze"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:superior_authority",
+            "level": 50
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        0
+      ]
+    },
+    "look_at_me": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.look_at_me"
+      },
+      "description": {
+        "translate": "ability.charpowers.look_at_me.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/look_at_me.png"
+      },
+      "list_index": 4,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "kneel"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:superior_authority",
+            "level": 75
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        0
+      ]
+    },
+    "attack": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.attack"
+      },
+      "description": {
+        "translate": "ability.charpowers.attack.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/attack.png"
+      },
+      "list_index": 5,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "look_at_me"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:superior_authority",
+            "level": 100
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        0
+      ]
+    },
+    "die": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.die"
+      },
+      "description": {
+        "translate": "ability.charpowers.die.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/die.png"
+      },
+      "list_index": 6,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "attack"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:superior_authority"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 6000
+          }
+        ]
+      },
+      "gui_position": [
+        2.5,
+        0
+      ]
+    }
+  }
+}

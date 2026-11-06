@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:anima_katana"
+    },
+    "title": {
+      "translate": "advancements.charpowers.katana.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.katana.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charpowers:anima_katana"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "charpowers:weapons/solgo"
+}

@@ -1,0 +1,21 @@
+POWER = {
+    'id': 'house_builder',
+    'name': 'House Builder',
+    'icon': 'minecraft:bricks',
+    'about': 'Raise a whole house from nothing: walls, roof, floors, stairs and working doors, in under half a minute, for free. Inside they are empty, the furnishing is yours. They clear plants and small bumps on the plot, and never overwrite anything built or anything that holds things. One 10 minute cooldown for the whole power.',
+    'how': 'Place 10,000 blocks, anywhere, by hand.',
+    'mastery': 'Every block you place is mastery (100,000 blocks reaches 100). Houses: Cosy Cottage at 1, Oak Timber House at 25, Mountain Lodge at 50, Farmhouse with Barn at 75, Tudor Manor at 100.',
+    'quest': 'At mastery 100, build a real castle: over 50 stacks (3,200) of your own blocks placed since mastery 90, walls at least 5 high on 2 sides or round a courtyard, at least 2 towers taller than the walls, and a doorway. Look at it and use Inspect Castle: it tells you what is missing.',
+    'awakening': 'Five finer houses: Pagoda House, Wizard Tower, Canal Merchant House, Cherry Blossom Villa, Manor with Towers.',
+    'quest_hint': 'Mastery 100: build a castle and use Inspect Castle on it.',
+    'abilities_text': 'Build a House: pick a house, then a ghost of the plot follows your eyes. Scroll turns it, click builds, crouch cancels.\nInspect Castle: mastery 100. Look at your castle and it is walked round and judged.\nBricklayer: every block you place counts towards mastery.',
+    'lang': {'sounds.charpowers.house_tap': 'Hammer tapping', 'sounds.charpowers.house_done': 'A house is finished'},
+    'abilities': [
+        {'id': 'build_house', 'name': 'Build a House', 'desc': 'Opens the picker. Then a ghost of the plot follows your eyes: scroll turns it, click builds, crouch cancels. 10 minutes between houses.',
+         'icon': 'minecraft:bricks', 'kind': 'key', 'slot': 0, 'pos': (-1, -0.5)},
+        {'id': 'inspect_castle', 'name': 'Inspect Castle', 'desc': 'Mastery 100. Look at your castle: it gets walked round and judged, and you are told exactly what is missing.',
+         'icon': 'minecraft:stone_bricks', 'kind': 'key', 'slot': 1, 'after': 'build_house', 'level': 100, 'pos': (1, -0.5)},
+        {'id': 'bricklayer', 'name': 'Bricklayer', 'desc': 'Every block you place counts towards mastery.',
+         'icon': 'minecraft:brick', 'kind': 'passive', 'pos': (0, 0.5)},
+    ],
+}

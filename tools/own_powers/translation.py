@@ -1,0 +1,21 @@
+POWER = {
+    'id': 'translation',
+    'name': 'Translation',
+    'icon': 'minecraft:parrot_spawn_egg',
+    'about': "Understand animals and mobs. You hear them say things, in voice lines from Char's own recordings (a resource pack). Only you hear them.",
+    'how': 'Keep a parrot on your shoulder for 20 minutes in total. It can jump off, the time adds up.',
+    'mastery': 'Every level: you hear mobs from further away (8 to 32 blocks). 25: sad lines start. 50: useful lines start.',
+    'quest': 'At mastery 100, hear every voice line from every mob in your voice folders at least once. They tick off in Options, Music & Sounds, Mob Voices.',
+    'awakening': 'Choose which mobs get to speak, in the same list.',
+    'quest_hint': 'Mastery 100: hear every voice line. See Options, Music & Sounds, Mob Voices.',
+    'abilities': [
+        {'id': 'understand_mobs', 'name': 'Understand Mobs', 'desc': 'Mobs near you say things only you can hear. Funny ones to start with.',
+         'icon': 'minecraft:parrot_spawn_egg', 'kind': 'passive', 'pos': (-1.5, 0)},
+        {'id': 'sad_lines', 'name': 'Sad Lines', 'desc': 'Mastery 25. Some of what they say gets sad.',
+         'icon': 'minecraft:ghast_tear', 'kind': 'passive', 'after': 'understand_mobs', 'level': 25, 'pos': (-0.5, 0)},
+        {'id': 'useful_lines', 'name': 'Useful Lines', 'desc': 'Mastery 50. Sometimes they tell you something useful.',
+         'icon': 'minecraft:compass', 'kind': 'passive', 'after': 'sad_lines', 'level': 50, 'pos': (0.5, 0)},
+        {'id': 'choose_voices', 'name': 'Choose Voices', 'desc': 'Awakened. Pick who gets to speak in Options, Music & Sounds, Mob Voices.',
+         'icon': 'minecraft:note_block', 'kind': 'passive', 'after': 'useful_lines', 'awakened': True, 'pos': (1.5, 0)},
+    ],
+}

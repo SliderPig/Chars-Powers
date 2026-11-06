@@ -1,0 +1,216 @@
+{
+  "name": {
+    "translate": "power.charpowers.cloning"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/cloning.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "clone": {
+      "type": "charpowers:clone",
+      "title": {
+        "translate": "ability.charpowers.clone"
+      },
+      "description": {
+        "translate": "ability.charpowers.clone.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/clone.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 100,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ]
+      },
+      "gui_position": [
+        -1.5,
+        -0.5
+      ]
+    },
+    "escaped_death": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.escaped_death"
+      },
+      "description": {
+        "translate": "ability.charpowers.escaped_death.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/escaped_death.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "clone_level_up"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:cloning",
+            "level": 40
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        -0.5
+      ]
+    },
+    "dog_pile": {
+      "type": "charpowers:dog_pile",
+      "title": {
+        "translate": "ability.charpowers.dog_pile"
+      },
+      "description": {
+        "translate": "ability.charpowers.dog_pile.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/dog_pile.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "escaped_death"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:cloning",
+            "level": 60
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 6000,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        -0.5
+      ]
+    },
+    "mastery_share": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.mastery_share"
+      },
+      "description": {
+        "translate": "ability.charpowers.mastery_share.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/mastery_share.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1.5,
+        0.5
+      ],
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "clone"
+          }
+        ]
+      }
+    },
+    "clone_level_up": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.clone_level_up"
+      },
+      "description": {
+        "translate": "ability.charpowers.clone_level_up.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/clone_level_up.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "clone"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:cloning",
+            "level": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        -0.5
+      ]
+    },
+    "power_clone": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.power_clone"
+      },
+      "description": {
+        "translate": "ability.charpowers.power_clone.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/power_clone.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "dog_pile"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:cloning",
+            "level": 80
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        0.5
+      ]
+    }
+  },
+  "background": "charpowers:textures/gui/powers/background.png"
+}

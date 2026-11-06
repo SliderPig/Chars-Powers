@@ -1,0 +1,274 @@
+{
+  "name": {
+    "translate": "power.charpowers.time_control"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/time_control.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "slow_down": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.slow_down"
+      },
+      "description": {
+        "translate": "ability.charpowers.slow_down.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/slow_down.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 1200
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        -0.5
+      ]
+    },
+    "gotta_move": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.gotta_move"
+      },
+      "description": {
+        "translate": "ability.charpowers.gotta_move.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gotta_move.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        0.5
+      ]
+    },
+    "hurry_up": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.hurry_up"
+      },
+      "description": {
+        "translate": "ability.charpowers.hurry_up.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/hurry_up.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "slow_down"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:time_control",
+            "level": 25
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 2400
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        -0.5
+      ]
+    },
+    "let_time_flow": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.let_time_flow"
+      },
+      "description": {
+        "translate": "ability.charpowers.let_time_flow.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/let_time_flow.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "hurry_up"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:time_control",
+            "level": 50
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        -0.5
+      ]
+    },
+    "time_block": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.time_block"
+      },
+      "description": {
+        "translate": "ability.charpowers.time_block.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/time_block.png"
+      },
+      "list_index": 4,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "let_time_flow"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:time_control",
+            "level": 100
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        -0.5
+      ]
+    },
+    "barrage": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.barrage"
+      },
+      "description": {
+        "translate": "ability.charpowers.barrage.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/barrage.png"
+      },
+      "list_index": 5,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "time_block"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:time_control"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 600
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        -1
+      ]
+    },
+    "still_moment": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.still_moment"
+      },
+      "description": {
+        "translate": "ability.charpowers.still_moment.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/still_moment.png"
+      },
+      "list_index": 6,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "time_block"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:time_control"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 2400
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        0
+      ]
+    }
+  }
+}

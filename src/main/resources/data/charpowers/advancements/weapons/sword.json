@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:golden_kings_long_sword"
+    },
+    "title": {
+      "translate": "advancements.charpowers.sword.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.sword.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charpowers:golden_kings_long_sword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "charpowers:weapons/root"
+}

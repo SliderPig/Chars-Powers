@@ -1,0 +1,146 @@
+{
+ "textures": {
+  "top": "charpowers:block/sword_stone_top",
+  "side": "charpowers:block/sword_stone_side",
+  "particle": "charpowers:block/sword_stone_side"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    3,
+    15
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "south": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "east": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "west": {
+     "uv": [
+      0,
+      13,
+      16,
+      16
+     ],
+     "texture": "#side"
+    },
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#top"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#side",
+     "cullface": "down"
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    3,
+    2
+   ],
+   "to": [
+    13,
+    5,
+    14
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      11,
+      16,
+      13
+     ],
+     "texture": "#side"
+    },
+    "south": {
+     "uv": [
+      0,
+      11,
+      16,
+      13
+     ],
+     "texture": "#side"
+    },
+    "east": {
+     "uv": [
+      0,
+      11,
+      16,
+      13
+     ],
+     "texture": "#side"
+    },
+    "west": {
+     "uv": [
+      0,
+      11,
+      16,
+      13
+     ],
+     "texture": "#side"
+    },
+    "up": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#top"
+    },
+    "down": {
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ],
+     "texture": "#side"
+    }
+   }
+  }
+ ]
+}

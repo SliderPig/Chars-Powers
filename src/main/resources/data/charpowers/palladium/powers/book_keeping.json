@@ -1,0 +1,201 @@
+{
+  "name": {
+    "translate": "power.charpowers.book_keeping"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/book_keeping.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "open_book": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.open_book"
+      },
+      "description": {
+        "translate": "ability.charpowers.open_book.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/open_book.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 10
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        0
+      ]
+    },
+    "book_holds_deaths": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.book_holds_deaths"
+      },
+      "description": {
+        "translate": "ability.charpowers.book_holds_deaths.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/book_holds_deaths.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1,
+        0
+      ]
+    },
+    "no_dupes": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.no_dupes"
+      },
+      "description": {
+        "translate": "ability.charpowers.no_dupes.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/no_dupes.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0,
+        0
+      ]
+    },
+    "page_2": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.page_2"
+      },
+      "description": {
+        "translate": "ability.charpowers.page_2.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/page_2.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:book_keeping",
+            "level": 25
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        1
+      ]
+    },
+    "page_3": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.page_3"
+      },
+      "description": {
+        "translate": "ability.charpowers.page_3.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/page_3.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "page_2"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:book_keeping",
+            "level": 50
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        1
+      ]
+    },
+    "page_4": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.page_4"
+      },
+      "description": {
+        "translate": "ability.charpowers.page_4.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/page_4.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "page_3"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:book_keeping",
+            "level": 75
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        1
+      ]
+    },
+    "page_5": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.page_5"
+      },
+      "description": {
+        "translate": "ability.charpowers.page_5.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/page_5.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "page_4"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:book_keeping",
+            "level": 100
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        1
+      ]
+    }
+  }
+}

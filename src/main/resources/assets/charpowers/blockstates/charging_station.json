@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "charging=false": {
+      "model": "charpowers:block/charging_station_off"
+    },
+    "charging=true": {
+      "model": "charpowers:block/charging_station_on"
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "name": {
+    "translate": "power.charpowers.game_player"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/game_player.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "status_window": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.status_window"
+      },
+      "description": {
+        "translate": "ability.charpowers.status_window.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/status_window.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -2,
+        0
+      ]
+    },
+    "gp_dash": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.gp_dash"
+      },
+      "description": {
+        "translate": "ability.charpowers.gp_dash.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gp_dash.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        0
+      ]
+    },
+    "own_inventory": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.own_inventory"
+      },
+      "description": {
+        "translate": "ability.charpowers.own_inventory.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/own_inventory.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -2,
+        2
+      ]
+    },
+    "gp_step": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.gp_step"
+      },
+      "description": {
+        "translate": "ability.charpowers.gp_step.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gp_step.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 60
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        2
+      ]
+    },
+    "gp_fear": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.gp_fear"
+      },
+      "description": {
+        "translate": "ability.charpowers.gp_fear.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gp_fear.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 600
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        2
+      ]
+    },
+    "gp_shadow": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.gp_shadow"
+      },
+      "description": {
+        "translate": "ability.charpowers.gp_shadow.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gp_shadow.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:game_player",
+            "level": 25
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        3
+      ]
+    },
+    "gates": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.gates"
+      },
+      "description": {
+        "translate": "ability.charpowers.gates.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gates.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -2,
+        3
+      ]
+    },
+    "daily_quests": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.daily_quests"
+      },
+      "description": {
+        "translate": "ability.charpowers.daily_quests.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/daily_quests.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0,
+        0
+      ]
+    },
+    "story_chain": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.story_chain"
+      },
+      "description": {
+        "translate": "ability.charpowers.story_chain.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/story_chain.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        1,
+        0
+      ]
+    },
+    "more_dailies_4": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.more_dailies_4"
+      },
+      "description": {
+        "translate": "ability.charpowers.more_dailies_4.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/more_dailies_4.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:game_player",
+            "level": 25
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        1
+      ]
+    },
+    "more_dailies_5": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.more_dailies_5"
+      },
+      "description": {
+        "translate": "ability.charpowers.more_dailies_5.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/more_dailies_5.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "more_dailies_4"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:game_player",
+            "level": 50
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        1
+      ]
+    },
+    "second_story": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.second_story"
+      },
+      "description": {
+        "translate": "ability.charpowers.second_story.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/second_story.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "more_dailies_5"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:game_player",
+            "level": 75
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        1
+      ]
+    },
+    "extra_slot": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.extra_slot"
+      },
+      "description": {
+        "translate": "ability.charpowers.extra_slot.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/extra_slot.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "second_story"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:game_player",
+            "level": 100
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        1
+      ]
+    },
+    "player_shop": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.player_shop"
+      },
+      "description": {
+        "translate": "ability.charpowers.player_shop.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/player_shop.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:game_player"
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        2
+      ]
+    }
+  }
+}

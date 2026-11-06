@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "charpowers:item/power_syringe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "charpowers:filled": 1
+      },
+      "model": "charpowers:item/power_syringe_filled"
+    }
+  ]
+}

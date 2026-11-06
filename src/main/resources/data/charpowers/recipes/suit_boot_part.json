@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palladium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gravecore"
+    }
+  ],
+  "category": "equipment",
+  "pattern": [
+    "NCN",
+    "NWN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "palladium:vibranium_circuit"
+    },
+    "W": {
+      "item": "palladium:vibranium_weave_boots"
+    }
+  },
+  "result": {
+    "item": "charpowers:suit_boot_part"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "name": {
+    "translate": "power.charpowers.invincible_armour"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/invincible_armour.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "call_suit": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.call_suit"
+      },
+      "description": {
+        "translate": "ability.charpowers.call_suit.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/call_suit.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 100
+          }
+        ]
+      },
+      "gui_position": [
+        -1.5,
+        -0.5
+      ]
+    },
+    "throw_mob": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.throw_mob"
+      },
+      "description": {
+        "translate": "ability.charpowers.throw_mob.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/throw_mob.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        -0.5
+      ]
+    },
+    "module_shield": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.module_shield"
+      },
+      "description": {
+        "translate": "ability.charpowers.module_shield.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/module_shield.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0.5,
+        -0.5
+      ]
+    },
+    "module_scanner": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.module_scanner"
+      },
+      "description": {
+        "translate": "ability.charpowers.module_scanner.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/module_scanner.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        1.5,
+        -0.5
+      ]
+    },
+    "module_strength": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.module_strength"
+      },
+      "description": {
+        "translate": "ability.charpowers.module_strength.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/module_strength.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1.5,
+        0.5
+      ]
+    },
+    "module_speed": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.module_speed"
+      },
+      "description": {
+        "translate": "ability.charpowers.module_speed.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/module_speed.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -0.5,
+        0.5
+      ]
+    },
+    "going_crazy": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.going_crazy"
+      },
+      "description": {
+        "translate": "ability.charpowers.going_crazy.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/going_crazy.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0.5,
+        0.5
+      ]
+    },
+    "slim_suit": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.slim_suit"
+      },
+      "description": {
+        "translate": "ability.charpowers.slim_suit.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/slim_suit.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:invincible_armour"
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        0.5
+      ]
+    }
+  }
+}

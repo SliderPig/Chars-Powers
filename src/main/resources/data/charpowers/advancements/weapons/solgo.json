@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:solgo_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.charpowers.solgo.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.solgo.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "charpowers:solgo"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "charpowers:weapons/root"
+}

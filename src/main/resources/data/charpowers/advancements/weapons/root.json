@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:fork"
+    },
+    "title": {
+      "translate": "advancements.charpowers.root.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/stone.png"
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charpowers:fork",
+              "charpowers:spray_bottle",
+              "charpowers:flame_hammer",
+              "charpowers:ice_staff",
+              "charpowers:golden_kings_long_sword",
+              "charpowers:dagger_of_darkness",
+              "charpowers:anima_katana"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

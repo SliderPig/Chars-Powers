@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:flame_hammer"
+    },
+    "title": {
+      "translate": "advancements.charpowers.hammer.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.hammer.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charpowers:flame_hammer"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "charpowers:weapons/root"
+}

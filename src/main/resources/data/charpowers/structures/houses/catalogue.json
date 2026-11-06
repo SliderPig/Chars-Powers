@@ -1,0 +1,62 @@
+[
+ {
+  "id": "cosy_cottage",
+  "name": "Cosy Cottage",
+  "level": 1,
+  "awakened": false
+ },
+ {
+  "id": "oak_timber_house",
+  "name": "Oak Timber House",
+  "level": 25,
+  "awakened": false
+ },
+ {
+  "id": "mountain_lodge",
+  "name": "Mountain Lodge",
+  "level": 50,
+  "awakened": false
+ },
+ {
+  "id": "farmhouse",
+  "name": "Farmhouse with Barn",
+  "level": 75,
+  "awakened": false
+ },
+ {
+  "id": "tudor_manor",
+  "name": "Tudor Manor",
+  "level": 100,
+  "awakened": false
+ },
+ {
+  "id": "pagoda_house",
+  "name": "Pagoda House",
+  "level": 1,
+  "awakened": true
+ },
+ {
+  "id": "wizard_tower",
+  "name": "Wizard Tower",
+  "level": 1,
+  "awakened": true
+ },
+ {
+  "id": "canal_house",
+  "name": "Canal Merchant House",
+  "level": 1,
+  "awakened": true
+ },
+ {
+  "id": "cherry_villa",
+  "name": "Cherry Blossom Villa",
+  "level": 1,
+  "awakened": true
+ },
+ {
+  "id": "towered_manor",
+  "name": "Manor with Towers",
+  "level": 1,
+  "awakened": true
+ }
+]

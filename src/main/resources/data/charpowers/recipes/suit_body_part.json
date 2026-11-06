@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palladium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gravecore"
+    }
+  ],
+  "category": "equipment",
+  "pattern": [
+    "BNB",
+    "BCB",
+    "BFB"
+  ],
+  "key": {
+    "B": {
+      "item": "palladium:vibranium_block"
+    },
+    "N": {
+      "item": "grave.core:netherite_battery"
+    },
+    "C": {
+      "item": "grave.core:cpu"
+    },
+    "F": {
+      "item": "palladium:vibranium_flux_capacitor"
+    }
+  },
+  "result": {
+    "item": "charpowers:suit_body_part"
+  }
+}

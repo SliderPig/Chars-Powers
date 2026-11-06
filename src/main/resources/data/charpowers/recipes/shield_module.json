@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palladium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gravecore"
+    }
+  ],
+  "category": "equipment",
+  "pattern": [
+    " C ",
+    "CXC",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "palladium:vibranium_circuit"
+    },
+    "X": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "charpowers:shield_module"
+  }
+}

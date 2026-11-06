@@ -1,0 +1,454 @@
+{
+  "name": {
+    "translate": "power.charpowers.green_lantern"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/green_lantern.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "rising_fist": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.rising_fist"
+      },
+      "description": {
+        "translate": "ability.charpowers.rising_fist.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/rising_fist.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        -1
+      ]
+    },
+    "backhand_slap": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.backhand_slap"
+      },
+      "description": {
+        "translate": "ability.charpowers.backhand_slap.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/backhand_slap.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        -1
+      ]
+    },
+    "hand_slam": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.hand_slam"
+      },
+      "description": {
+        "translate": "ability.charpowers.hand_slam.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/hand_slam.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        -1
+      ]
+    },
+    "hand_throw": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.hand_throw"
+      },
+      "description": {
+        "translate": "ability.charpowers.hand_throw.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/hand_throw.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        -1
+      ]
+    },
+    "construct_sword": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.construct_sword"
+      },
+      "description": {
+        "translate": "ability.charpowers.construct_sword.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/construct_sword.png"
+      },
+      "list_index": 5,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 10
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        0
+      ]
+    },
+    "launch_swords": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.launch_swords"
+      },
+      "description": {
+        "translate": "ability.charpowers.launch_swords.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/launch_swords.png"
+      },
+      "list_index": 6,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        0
+      ]
+    },
+    "minigun": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.minigun"
+      },
+      "description": {
+        "translate": "ability.charpowers.minigun.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/minigun.png"
+      },
+      "list_index": 7,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 10
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        0
+      ]
+    },
+    "turret": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.turret"
+      },
+      "description": {
+        "translate": "ability.charpowers.turret.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/turret.png"
+      },
+      "list_index": 8,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        0
+      ]
+    },
+    "bubble": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.bubble"
+      },
+      "description": {
+        "translate": "ability.charpowers.bubble.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/bubble.png"
+      },
+      "list_index": 10,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 10
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        1
+      ]
+    },
+    "nuke": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.nuke"
+      },
+      "description": {
+        "translate": "ability.charpowers.nuke.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/nuke.png"
+      },
+      "list_index": 11,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        1
+      ]
+    },
+    "fist_field": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.fist_field"
+      },
+      "description": {
+        "translate": "ability.charpowers.fist_field.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/fist_field.png"
+      },
+      "list_index": 12,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:green_lantern"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        2
+      ]
+    },
+    "sword_rain": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.sword_rain"
+      },
+      "description": {
+        "translate": "ability.charpowers.sword_rain.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/sword_rain.png"
+      },
+      "list_index": 13,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:green_lantern"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        2
+      ]
+    },
+    "gl_flight": {
+      "type": "palladium:attribute_modifier",
+      "title": {
+        "translate": "ability.charpowers.gl_flight"
+      },
+      "description": {
+        "translate": "ability.charpowers.gl_flight.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gl_flight.png"
+      },
+      "attribute": "palladium:flight_speed",
+      "amount": 1,
+      "operation": 0,
+      "uuid": "e2a4d9c1-77b3-4c0e-9a51-6d1f3b2c8e70",
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:not",
+            "conditions": [
+              {
+                "type": "palladium:ability_enabled",
+                "power": "null",
+                "ability": "suit_off"
+              }
+            ]
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        1
+      ]
+    },
+    "suit_off": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.suit_off"
+      },
+      "description": {
+        "translate": "ability.charpowers.suit_off.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/suit_off.png"
+      },
+      "list_index": 4,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        0
+      ]
+    },
+    "gl_tools": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.gl_tools"
+      },
+      "description": {
+        "translate": "ability.charpowers.gl_tools.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/gl_tools.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        1,
+        1
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "name": {
+    "translate": "power.charpowers.teacher"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/teacher.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "teach": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.teach"
+      },
+      "description": {
+        "translate": "ability.charpowers.teach.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/teach.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 100
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        0
+      ]
+    },
+    "no_other_powers": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.no_other_powers"
+      },
+      "description": {
+        "translate": "ability.charpowers.no_other_powers.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/no_other_powers.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "teach"
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        0
+      ]
+    }
+  }
+}

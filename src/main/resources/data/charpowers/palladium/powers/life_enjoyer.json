@@ -1,0 +1,274 @@
+{
+  "name": {
+    "translate": "power.charpowers.life_enjoyer"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/life_enjoyer.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "vein_miner": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.vein_miner"
+      },
+      "description": {
+        "translate": "ability.charpowers.vein_miner.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/vein_miner.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        -0.5
+      ]
+    },
+    "tree_logger": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.tree_logger"
+      },
+      "description": {
+        "translate": "ability.charpowers.tree_logger.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/tree_logger.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        -0.5
+      ]
+    },
+    "magnet": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.magnet"
+      },
+      "description": {
+        "translate": "ability.charpowers.magnet.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/magnet.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        -0.5
+      ]
+    },
+    "auto_tool": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.auto_tool"
+      },
+      "description": {
+        "translate": "ability.charpowers.auto_tool.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/auto_tool.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        -0.5
+      ]
+    },
+    "chest_sorter": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.chest_sorter"
+      },
+      "description": {
+        "translate": "ability.charpowers.chest_sorter.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/chest_sorter.png"
+      },
+      "list_index": 4,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 100
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        -0.5
+      ]
+    },
+    "ultimine": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.ultimine"
+      },
+      "description": {
+        "translate": "ability.charpowers.ultimine.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/ultimine.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:life_enjoyer"
+          }
+        ]
+      },
+      "gui_position": [
+        2.5,
+        0.5
+      ]
+    },
+    "farming": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.farming"
+      },
+      "description": {
+        "translate": "ability.charpowers.farming.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/farming.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -2.5,
+        0.5
+      ]
+    },
+    "comfy": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.comfy"
+      },
+      "description": {
+        "translate": "ability.charpowers.comfy.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/comfy.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1.5,
+        0.5
+      ]
+    },
+    "animal_friend": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.animal_friend"
+      },
+      "description": {
+        "translate": "ability.charpowers.animal_friend.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/animal_friend.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -0.5,
+        0.5
+      ]
+    },
+    "soft_landing": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.soft_landing"
+      },
+      "description": {
+        "translate": "ability.charpowers.soft_landing.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/soft_landing.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0.5,
+        0.5
+      ]
+    },
+    "easy_walking": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.easy_walking"
+      },
+      "description": {
+        "translate": "ability.charpowers.easy_walking.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/easy_walking.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        1.5,
+        0.5
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+build/
+.gradle/
+run/
+out/
+.notes/
+*.iml
+.idea/
+libs/*.jar
+.notes/sound-downloads/
+run-smoke/
+run-client/
+run-real/
+run-real-guest/
+__pycache__/
+run-full/
+run-gallery/
+logs/

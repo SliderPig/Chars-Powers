@@ -1,0 +1,56 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:base_stone_overworld",
+    "#minecraft:base_stone_nether",
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "#minecraft:terracotta",
+    {
+      "id": "#forge:ores",
+      "required": false
+    },
+    "minecraft:gravel",
+    "minecraft:clay",
+    "minecraft:calcite",
+    "minecraft:dripstone_block",
+    "minecraft:pointed_dripstone",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone",
+    "minecraft:end_stone",
+    "minecraft:smooth_basalt",
+    "minecraft:magma_block",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:ancient_debris",
+    "minecraft:raw_iron_block",
+    "minecraft:raw_copper_block",
+    "minecraft:raw_gold_block",
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst",
+    {
+      "id": "#forge:stone",
+      "required": false
+    },
+    {
+      "id": "#forge:netherrack",
+      "required": false
+    },
+    {
+      "id": "#forge:end_stones",
+      "required": false
+    },
+    {
+      "id": "#forge:sand",
+      "required": false
+    },
+    {
+      "id": "#forge:gravel",
+      "required": false
+    }
+  ]
+}

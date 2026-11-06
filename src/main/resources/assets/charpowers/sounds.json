@@ -1,0 +1,737 @@
+{
+  "kazoo": {
+    "sounds": [
+      {
+        "name": "charpowers:kazoo"
+      }
+    ],
+    "subtitle": "sounds.charpowers.kazoo"
+  },
+  "sad_trombone": {
+    "sounds": [
+      {
+        "name": "charpowers:sad_trombone"
+      }
+    ],
+    "subtitle": "sounds.charpowers.sad_trombone"
+  },
+  "drum_roll": {
+    "sounds": [
+      {
+        "name": "charpowers:drum_roll"
+      }
+    ],
+    "subtitle": "sounds.charpowers.drum_roll"
+  },
+  "boing": {
+    "sounds": [
+      {
+        "name": "charpowers:boing"
+      }
+    ],
+    "subtitle": "sounds.charpowers.boing"
+  },
+  "microwave_ding": {
+    "sounds": [
+      {
+        "name": "charpowers:microwave_ding"
+      }
+    ],
+    "subtitle": "sounds.charpowers.microwave_ding"
+  },
+  "snore": {
+    "sounds": [
+      {
+        "name": "charpowers:snore"
+      }
+    ],
+    "subtitle": "sounds.charpowers.snore"
+  },
+  "yawn": {
+    "sounds": [
+      {
+        "name": "charpowers:yawn"
+      }
+    ],
+    "subtitle": "sounds.charpowers.yawn"
+  },
+  "crickets": {
+    "sounds": [
+      {
+        "name": "charpowers:crickets"
+      }
+    ],
+    "subtitle": "sounds.charpowers.crickets"
+  },
+  "seagull": {
+    "sounds": [
+      {
+        "name": "charpowers:seagull"
+      }
+    ],
+    "subtitle": "sounds.charpowers.seagull"
+  },
+  "quack": {
+    "sounds": [
+      {
+        "name": "charpowers:quack"
+      }
+    ],
+    "subtitle": "sounds.charpowers.quack"
+  },
+  "crab_click": {
+    "sounds": [
+      {
+        "name": "charpowers:crab_click"
+      }
+    ],
+    "subtitle": "sounds.charpowers.crab_click"
+  },
+  "clapping": {
+    "sounds": [
+      {
+        "name": "charpowers:clapping"
+      }
+    ],
+    "subtitle": "sounds.charpowers.clapping"
+  },
+  "burp": {
+    "sounds": [
+      {
+        "name": "charpowers:burp"
+      }
+    ],
+    "subtitle": "sounds.charpowers.burp"
+  },
+  "sneeze": {
+    "sounds": [
+      {
+        "name": "charpowers:sneeze"
+      }
+    ],
+    "subtitle": "sounds.charpowers.sneeze"
+  },
+  "gasp": {
+    "sounds": [
+      {
+        "name": "charpowers:gasp"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gasp"
+  },
+  "ow": {
+    "sounds": [
+      {
+        "name": "charpowers:ow"
+      }
+    ],
+    "subtitle": "sounds.charpowers.ow"
+  },
+  "grass_whistle": {
+    "sounds": [
+      {
+        "name": "charpowers:grass_whistle"
+      }
+    ],
+    "subtitle": "sounds.charpowers.grass_whistle"
+  },
+  "zap": {
+    "sounds": [
+      {
+        "name": "charpowers:zap"
+      }
+    ],
+    "subtitle": "sounds.charpowers.zap"
+  },
+  "party_popper": {
+    "sounds": [
+      {
+        "name": "charpowers:party_popper"
+      }
+    ],
+    "subtitle": "sounds.charpowers.party_popper"
+  },
+  "boo": {
+    "sounds": [
+      {
+        "name": "charpowers:boo"
+      }
+    ],
+    "subtitle": "sounds.charpowers.boo"
+  },
+  "hmph": {
+    "sounds": [
+      {
+        "name": "charpowers:hmph"
+      }
+    ],
+    "subtitle": "sounds.charpowers.hmph"
+  },
+  "bubble_wrap": {
+    "sounds": [
+      {
+        "name": "charpowers:bubble_wrap"
+      }
+    ],
+    "subtitle": "sounds.charpowers.bubble_wrap"
+  },
+  "squeak": {
+    "sounds": [
+      {
+        "name": "charpowers:squeak"
+      }
+    ],
+    "subtitle": "sounds.charpowers.squeak"
+  },
+  "hiccup": {
+    "sounds": [
+      {
+        "name": "charpowers:hiccup"
+      }
+    ],
+    "subtitle": "sounds.charpowers.hiccup"
+  },
+  "stomach": {
+    "sounds": [
+      {
+        "name": "charpowers:stomach"
+      }
+    ],
+    "subtitle": "sounds.charpowers.stomach"
+  },
+  "suit_step": {
+    "sounds": [
+      {
+        "name": "charpowers:suit_step_1"
+      },
+      {
+        "name": "charpowers:suit_step_2"
+      },
+      {
+        "name": "charpowers:suit_step_3"
+      }
+    ],
+    "subtitle": "sounds.charpowers.suit_step"
+  },
+  "suit_land": {
+    "sounds": [
+      {
+        "name": "charpowers:suit_land_1"
+      },
+      {
+        "name": "charpowers:suit_land_2"
+      }
+    ],
+    "subtitle": "sounds.charpowers.suit_land"
+  },
+  "suit_servo": {
+    "sounds": [
+      {
+        "name": "charpowers:suit_servo_1"
+      },
+      {
+        "name": "charpowers:suit_servo_2"
+      }
+    ],
+    "subtitle": "sounds.charpowers.suit_servo"
+  },
+  "suit_clank": {
+    "sounds": [
+      {
+        "name": "charpowers:suit_clank_1"
+      },
+      {
+        "name": "charpowers:suit_clank_2"
+      }
+    ],
+    "subtitle": "sounds.charpowers.suit_clank"
+  },
+  "suit_thruster": {
+    "sounds": [
+      {
+        "name": "charpowers:suit_thruster"
+      }
+    ],
+    "subtitle": "sounds.charpowers.suit_thruster"
+  },
+  "spray_water": {
+    "sounds": [
+      {
+        "name": "charpowers:items/spray_water"
+      }
+    ],
+    "subtitle": "sounds.charpowers.spray_water"
+  },
+  "spray_lava": {
+    "sounds": [
+      {
+        "name": "charpowers:items/spray_lava"
+      }
+    ],
+    "subtitle": "sounds.charpowers.spray_lava"
+  },
+  "spray_milk": {
+    "sounds": [
+      {
+        "name": "charpowers:items/spray_milk"
+      }
+    ],
+    "subtitle": "sounds.charpowers.spray_milk"
+  },
+  "spray_fill": {
+    "sounds": [
+      {
+        "name": "charpowers:items/spray_fill"
+      }
+    ],
+    "subtitle": "sounds.charpowers.spray_fill"
+  },
+  "ice_cast": {
+    "sounds": [
+      {
+        "name": "charpowers:items/ice_cast"
+      }
+    ],
+    "subtitle": "sounds.charpowers.ice_cast"
+  },
+  "ice_shatter": {
+    "sounds": [
+      {
+        "name": "charpowers:items/ice_shatter"
+      }
+    ],
+    "subtitle": "sounds.charpowers.ice_shatter"
+  },
+  "hammer_slam": {
+    "sounds": [
+      {
+        "name": "charpowers:items/hammer_slam"
+      }
+    ],
+    "subtitle": "sounds.charpowers.hammer_slam"
+  },
+  "flame_burst": {
+    "sounds": [
+      {
+        "name": "charpowers:items/flame_burst"
+      }
+    ],
+    "subtitle": "sounds.charpowers.flame_burst"
+  },
+  "sword_pull": {
+    "sounds": [
+      {
+        "name": "charpowers:items/sword_pull"
+      }
+    ],
+    "subtitle": "sounds.charpowers.sword_pull"
+  },
+  "sword_ring": {
+    "sounds": [
+      {
+        "name": "charpowers:items/sword_ring"
+      }
+    ],
+    "subtitle": "sounds.charpowers.sword_ring"
+  },
+  "gold_swing": {
+    "sounds": [
+      {
+        "name": "charpowers:items/gold_swing"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gold_swing"
+  },
+  "gold_slam": {
+    "sounds": [
+      {
+        "name": "charpowers:items/gold_slam"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gold_slam"
+  },
+  "gold_thrust": {
+    "sounds": [
+      {
+        "name": "charpowers:items/gold_thrust"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gold_thrust"
+  },
+  "gold_beat": {
+    "sounds": [
+      {
+        "name": "charpowers:items/gold_beat"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gold_beat"
+  },
+  "katana_swing": {
+    "sounds": [
+      {
+        "name": "charpowers:items/katana_swing"
+      }
+    ],
+    "subtitle": "sounds.charpowers.katana_swing"
+  },
+  "soul_cut": {
+    "sounds": [
+      {
+        "name": "charpowers:items/soul_cut"
+      }
+    ],
+    "subtitle": "sounds.charpowers.soul_cut"
+  },
+  "dagger_swing": {
+    "sounds": [
+      {
+        "name": "charpowers:items/dagger_swing"
+      }
+    ],
+    "subtitle": "sounds.charpowers.dagger_swing"
+  },
+  "fork_ting": {
+    "sounds": [
+      {
+        "name": "charpowers:items/fork_ting"
+      }
+    ],
+    "subtitle": "sounds.charpowers.fork_ting"
+  },
+  "solgo_breath": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_breath"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_breath"
+  },
+  "solgo_whisper": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_whisper"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_whisper"
+  },
+  "solgo_windup": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_windup"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_windup"
+  },
+  "solgo_slash": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_slash"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_slash"
+  },
+  "solgo_lunge": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_lunge"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_lunge"
+  },
+  "solgo_scream": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_scream"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_scream"
+  },
+  "solgo_flicker": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_flicker"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_flicker"
+  },
+  "solgo_hurt": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_hurt"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_hurt"
+  },
+  "solgo_death": {
+    "sounds": [
+      {
+        "name": "charpowers:items/solgo_death"
+      }
+    ],
+    "subtitle": "sounds.charpowers.solgo_death"
+  },
+  "construct_form": {
+    "sounds": [
+      {
+        "name": "charpowers:construct_form"
+      }
+    ],
+    "subtitle": "sounds.charpowers.construct_form"
+  },
+  "hand_swing": {
+    "sounds": [
+      {
+        "name": "charpowers:hand_swing"
+      }
+    ],
+    "subtitle": "sounds.charpowers.hand_swing"
+  },
+  "impact_thump": {
+    "sounds": [
+      {
+        "name": "charpowers:impact_thump"
+      }
+    ],
+    "subtitle": "sounds.charpowers.impact_thump"
+  },
+  "construct_dissolve": {
+    "sounds": [
+      {
+        "name": "charpowers:construct_dissolve"
+      }
+    ],
+    "subtitle": "sounds.charpowers.construct_dissolve"
+  },
+  "shadow_rise": {
+    "sounds": [
+      {
+        "name": "charpowers:shadow_rise"
+      }
+    ],
+    "subtitle": "sounds.charpowers.shadow_rise"
+  },
+  "shadow_fail": {
+    "sounds": [
+      {
+        "name": "charpowers:shadow_fail"
+      }
+    ],
+    "subtitle": "sounds.charpowers.shadow_fail"
+  },
+  "time_slow": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/time_slow"
+      }
+    ],
+    "subtitle": "sounds.charpowers.time_slow"
+  },
+  "time_tick": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/time_tick"
+      }
+    ],
+    "subtitle": "sounds.charpowers.time_tick"
+  },
+  "time_stop": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/time_stop"
+      }
+    ],
+    "subtitle": "sounds.charpowers.time_stop"
+  },
+  "time_rush": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/time_rush"
+      }
+    ],
+    "subtitle": "sounds.charpowers.time_rush"
+  },
+  "mirror_shimmer": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/mirror_shimmer"
+      }
+    ],
+    "subtitle": "sounds.charpowers.mirror_shimmer"
+  },
+  "glass_shatter": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/glass_shatter"
+      }
+    ],
+    "subtitle": "sounds.charpowers.glass_shatter"
+  },
+  "dark_suck": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/dark_suck"
+      }
+    ],
+    "subtitle": "sounds.charpowers.dark_suck"
+  },
+  "soul_punch": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/soul_punch"
+      }
+    ],
+    "subtitle": "sounds.charpowers.soul_punch"
+  },
+  "raise_rumble": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/raise_rumble"
+      }
+    ],
+    "subtitle": "sounds.charpowers.raise_rumble"
+  },
+  "holo_open": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/holo_open"
+      }
+    ],
+    "subtitle": "sounds.charpowers.holo_open"
+  },
+  "holo_close": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/holo_close"
+      }
+    ],
+    "subtitle": "sounds.charpowers.holo_close"
+  },
+  "holo_ping": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/holo_ping"
+      }
+    ],
+    "subtitle": "sounds.charpowers.holo_ping"
+  },
+  "gate_open": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/gate_open"
+      }
+    ],
+    "subtitle": "sounds.charpowers.gate_open"
+  },
+  "level_up": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/level_up"
+      }
+    ],
+    "subtitle": "sounds.charpowers.level_up"
+  },
+  "claim_chirp": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/claim_chirp"
+      }
+    ],
+    "subtitle": "sounds.charpowers.claim_chirp"
+  },
+  "order_chirp": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/order_chirp"
+      }
+    ],
+    "subtitle": "sounds.charpowers.order_chirp"
+  },
+  "command_boom": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/command_boom"
+      }
+    ],
+    "subtitle": "sounds.charpowers.command_boom"
+  },
+  "whisper_shimmer": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/whisper_shimmer"
+      }
+    ],
+    "subtitle": "sounds.charpowers.whisper_shimmer"
+  },
+  "word_thunk": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/word_thunk"
+      }
+    ],
+    "subtitle": "sounds.charpowers.word_thunk"
+  },
+  "rock_crunch": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/rock_crunch"
+      }
+    ],
+    "subtitle": "sounds.charpowers.rock_crunch"
+  },
+  "ultimine_sweep": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/ultimine_sweep"
+      }
+    ],
+    "subtitle": "sounds.charpowers.ultimine_sweep"
+  },
+  "page_flip": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/page_flip"
+      }
+    ],
+    "subtitle": "sounds.charpowers.page_flip"
+  },
+  "ink_scratch": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/ink_scratch"
+      }
+    ],
+    "subtitle": "sounds.charpowers.ink_scratch"
+  },
+  "pages_rewind": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/pages_rewind"
+      }
+    ],
+    "subtitle": "sounds.charpowers.pages_rewind"
+  },
+  "chalk_tap": {
+    "sounds": [
+      {
+        "name": "charpowers:powers/chalk_tap"
+      }
+    ],
+    "subtitle": "sounds.charpowers.chalk_tap"
+  },
+  "house_tap": {
+    "sounds": [
+      {
+        "name": "charpowers:house_tap"
+      }
+    ],
+    "subtitle": "sounds.charpowers.house_tap"
+  },
+  "house_done": {
+    "sounds": [
+      {
+        "name": "charpowers:house_done"
+      }
+    ],
+    "subtitle": "sounds.charpowers.house_done"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "charpowers:kings_rock",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 48,
+    "separation": 18,
+    "salt": 735120984
+  }
+}

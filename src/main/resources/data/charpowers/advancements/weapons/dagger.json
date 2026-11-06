@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "charpowers:dagger_of_darkness"
+    },
+    "title": {
+      "translate": "advancements.charpowers.dagger.title"
+    },
+    "description": {
+      "translate": "advancements.charpowers.dagger.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charpowers:dagger_of_darkness"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "charpowers:weapons/root"
+}

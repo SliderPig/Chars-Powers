@@ -1,0 +1,11 @@
+{
+ "variants": {
+  "pulled=false": {
+   "model": "charpowers:block/sword_in_stone"
+  },
+  "pulled=true": {
+   "model": "charpowers:block/sword_in_stone",
+   "y": 90
+  }
+ }
+}

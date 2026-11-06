@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "ink=true": {
+      "model": "charpowers:block/word_ink"
+    },
+    "ink=false": {
+      "model": "charpowers:block/word_plain"
+    }
+  }
+}

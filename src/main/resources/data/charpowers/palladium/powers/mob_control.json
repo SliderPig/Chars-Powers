@@ -1,0 +1,173 @@
+{
+  "name": {
+    "translate": "power.charpowers.mob_control"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/mob_control.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "command_mob": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.command_mob"
+      },
+      "description": {
+        "translate": "ability.charpowers.command_mob.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/command_mob.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        -1.5,
+        -0.5
+      ]
+    },
+    "ride_mob": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.ride_mob"
+      },
+      "description": {
+        "translate": "ability.charpowers.ride_mob.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/ride_mob.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        -0.5
+      ]
+    },
+    "pet_follower": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.pet_follower"
+      },
+      "description": {
+        "translate": "ability.charpowers.pet_follower.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/pet_follower.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        -0.5
+      ]
+    },
+    "swap_minds": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.swap_minds"
+      },
+      "description": {
+        "translate": "ability.charpowers.swap_minds.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/swap_minds.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 200
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        -0.5
+      ]
+    },
+    "mob_peace": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.mob_peace"
+      },
+      "description": {
+        "translate": "ability.charpowers.mob_peace.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/mob_peace.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1,
+        0.5
+      ]
+    },
+    "boss_tamer": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.boss_tamer"
+      },
+      "description": {
+        "translate": "ability.charpowers.boss_tamer.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/boss_tamer.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:mob_control"
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        0.5
+      ]
+    }
+  }
+}

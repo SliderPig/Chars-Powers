@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palladium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gravecore"
+    }
+  ],
+  "category": "equipment",
+  "pattern": [
+    "VCV",
+    "T T",
+    "V V"
+  ],
+  "key": {
+    "V": {
+      "item": "palladium:vibranium_ingot"
+    },
+    "C": {
+      "item": "palladium:vibranium_circuit"
+    },
+    "T": {
+      "item": "palladium:titanium_block"
+    }
+  },
+  "result": {
+    "item": "charpowers:suit_leg_part"
+  }
+}

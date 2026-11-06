@@ -1,0 +1,309 @@
+{
+  "name": {
+    "translate": "power.charpowers.necromancy"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/necromancy.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "summon_zombies": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.summon_zombies"
+      },
+      "description": {
+        "translate": "ability.charpowers.summon_zombies.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/summon_zombies.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 600
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        -0.5
+      ]
+    },
+    "summon_skeletons": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.summon_skeletons"
+      },
+      "description": {
+        "translate": "ability.charpowers.summon_skeletons.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/summon_skeletons.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 900
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        -0.5
+      ]
+    },
+    "undead_explosion": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.undead_explosion"
+      },
+      "description": {
+        "translate": "ability.charpowers.undead_explosion.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/undead_explosion.png"
+      },
+      "list_index": 2,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 1200
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        -0.5
+      ]
+    },
+    "chosen_revival": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.chosen_revival"
+      },
+      "description": {
+        "translate": "ability.charpowers.chosen_revival.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/chosen_revival.png"
+      },
+      "list_index": 3,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        -0.5
+      ]
+    },
+    "undead_riot": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.undead_riot"
+      },
+      "description": {
+        "translate": "ability.charpowers.undead_riot.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/undead_riot.png"
+      },
+      "list_index": 4,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 12000
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        -0.5
+      ]
+    },
+    "point_undead": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.point_undead"
+      },
+      "description": {
+        "translate": "ability.charpowers.point_undead.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/point_undead.png"
+      },
+      "list_index": 5,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 20
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        0.5
+      ]
+    },
+    "undead_gear": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.undead_gear"
+      },
+      "description": {
+        "translate": "ability.charpowers.undead_gear.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/undead_gear.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "summon_zombies"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:necromancy",
+            "level": 10
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        0.5
+      ]
+    },
+    "fast_arrows": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.fast_arrows"
+      },
+      "description": {
+        "translate": "ability.charpowers.fast_arrows.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/fast_arrows.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "summon_skeletons"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:necromancy",
+            "level": 25
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        0.5
+      ]
+    },
+    "sun_proof": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.sun_proof"
+      },
+      "description": {
+        "translate": "ability.charpowers.sun_proof.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/sun_proof.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:necromancy",
+            "level": 75
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        0.5
+      ]
+    },
+    "raise_players": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.raise_players"
+      },
+      "description": {
+        "translate": "ability.charpowers.raise_players.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/raise_players.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "chosen_revival"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:necromancy"
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        0.5
+      ]
+    }
+  }
+}

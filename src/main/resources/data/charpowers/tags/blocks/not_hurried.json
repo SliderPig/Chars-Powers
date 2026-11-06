@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:hopper",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:moving_piston",
+    "minecraft:beacon",
+    "minecraft:end_gateway",
+    "minecraft:end_portal",
+    "minecraft:conduit",
+    "minecraft:bell",
+    "minecraft:sculk_sensor",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:sculk_catalyst",
+    "minecraft:sculk_shrieker",
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:ender_chest",
+    "minecraft:shulker_box",
+    "minecraft:lectern",
+    "minecraft:jukebox",
+    "minecraft:skeleton_skull",
+    "minecraft:wither_skeleton_skull",
+    "minecraft:player_head",
+    "minecraft:zombie_head",
+    "minecraft:creeper_head",
+    "minecraft:dragon_head",
+    "minecraft:piglin_head"
+  ]
+}

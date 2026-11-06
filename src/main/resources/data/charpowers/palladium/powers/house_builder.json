@@ -1,0 +1,101 @@
+{
+  "name": {
+    "translate": "power.charpowers.house_builder"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/house_builder.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "build_house": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.build_house"
+      },
+      "description": {
+        "translate": "ability.charpowers.build_house.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/build_house.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        -0.5
+      ]
+    },
+    "inspect_castle": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.inspect_castle"
+      },
+      "description": {
+        "translate": "ability.charpowers.inspect_castle.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/inspect_castle.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "build_house"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:house_builder",
+            "level": 100
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        -0.5
+      ]
+    },
+    "bricklayer": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.bricklayer"
+      },
+      "description": {
+        "translate": "ability.charpowers.bricklayer.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/bricklayer.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0,
+        0.5
+      ]
+    }
+  }
+}

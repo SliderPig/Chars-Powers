@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "charpowers:item/grand_spear"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        55
+      ],
+      "translation": [
+        -0.0,
+        4.85,
+        0.35
+      ],
+      "scale": [
+        1.87,
+        1.87,
+        1.87
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -55
+      ],
+      "translation": [
+        -0.0,
+        4.85,
+        0.35
+      ],
+      "scale": [
+        1.87,
+        1.87,
+        1.87
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        25
+      ],
+      "translation": [
+        1.13,
+        3.85,
+        1.37
+      ],
+      "scale": [
+        1.496,
+        1.496,
+        1.496
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -25
+      ],
+      "translation": [
+        1.13,
+        3.85,
+        1.37
+      ],
+      "scale": [
+        1.496,
+        1.496,
+        1.496
+      ]
+    }
+  }
+}

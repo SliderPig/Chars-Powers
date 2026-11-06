@@ -1,0 +1,227 @@
+{
+  "name": {
+    "translate": "power.charpowers.future_sight"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/future_sight.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "hush": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.hush"
+      },
+      "description": {
+        "translate": "ability.charpowers.hush.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/hush.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -2,
+        -0.5
+      ]
+    },
+    "ore_hints": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.ore_hints"
+      },
+      "description": {
+        "translate": "ability.charpowers.ore_hints.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/ore_hints.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1,
+        -0.5
+      ]
+    },
+    "fight_tips": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.fight_tips"
+      },
+      "description": {
+        "translate": "ability.charpowers.fight_tips.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/fight_tips.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        0,
+        -0.5
+      ]
+    },
+    "sense_powers": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.sense_powers"
+      },
+      "description": {
+        "translate": "ability.charpowers.sense_powers.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/sense_powers.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        1,
+        -0.5
+      ]
+    },
+    "rank_sense": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.rank_sense"
+      },
+      "description": {
+        "translate": "ability.charpowers.rank_sense.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/rank_sense.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "sense_powers"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:future_sight",
+            "level": 50
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        0.5
+      ]
+    },
+    "ore_glow": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.ore_glow"
+      },
+      "description": {
+        "translate": "ability.charpowers.ore_glow.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/ore_glow.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "ore_hints"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:future_sight",
+            "level": 75
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        0.5
+      ]
+    },
+    "ore_count": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.ore_count"
+      },
+      "description": {
+        "translate": "ability.charpowers.ore_count.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/ore_count.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "ore_glow"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:future_sight",
+            "level": 100
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        0.5
+      ]
+    },
+    "see_through": {
+      "type": "charpowers:key",
+      "title": {
+        "translate": "ability.charpowers.see_through"
+      },
+      "description": {
+        "translate": "ability.charpowers.see_through.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/see_through.png"
+      },
+      "list_index": 1,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:future_sight"
+          }
+        ],
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 40
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        0
+      ]
+    }
+  }
+}

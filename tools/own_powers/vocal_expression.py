@@ -1,0 +1,22 @@
+POWER = {
+    'id': 'vocal_expression',
+    'name': 'Vocal Expression',
+    'icon': 'minecraft:writable_book',
+    'about': 'Type words in chat and they appear in the world as SOLID letters. Stand on them, build bridges with them, block things with them. Bigger words use more breath.',
+    'how': 'Send 1,000 chat messages.',
+    'mastery': 'Every level: words last longer (10 s to 5 minutes) and cost less breath. Longest word: 5 letters, up to 30 at 100. 50: words hit harder when they shoot out. 100: two words out at once.',
+    'quest': 'At mastery 100, cross 200 blocks standing only on your own words, without touching anything else.',
+    'awakening': 'Words do what they say when they hit: BURN sets things on fire, ICE and FREEZE freeze, BOOM explodes and breaks blocks. Also GROW (bone meal), BLOOM (flowers), HEAL, PUSH, PULL, JUMP (throws things up), LIGHT (makes things glow), STORM (rain, puts out fires), SLEEP (slows things right down).',
+    'quest_hint': 'Mastery 100: cross a 200 block gap standing only on your own words.',
+    'energy_bars': {'breath': {'max': 100, 'color': '#FF88C8'}},
+    'abilities': [
+        {'id': 'speak', 'name': 'Speak', 'desc': 'A toggle: while on, what you type in chat becomes a word and no one reads it. It shoots out where you look, hits whatever it crashes into, then stays solid. Crouch while you send it to lay it flat ahead of you, as a bridge.',
+         'icon': 'minecraft:writable_book', 'kind': 'toggle', 'slot': 0, 'pos': (-1.5, 0)},
+        {'id': 'hard_words', 'name': 'Hard Words', 'desc': 'Mastery 50. Words hit harder when they shoot out.',
+         'icon': 'minecraft:anvil', 'kind': 'passive', 'after': 'speak', 'level': 50, 'pos': (-0.5, 0)},
+        {'id': 'two_words', 'name': 'Two Words', 'desc': 'Mastery 100. Two words out at once.',
+         'icon': 'minecraft:book', 'kind': 'passive', 'after': 'hard_words', 'level': 100, 'pos': (0.5, 0)},
+        {'id': 'true_words', 'name': 'True Words', 'desc': 'Awakened. BURN, ICE, FREEZE, BOOM, GROW, BLOOM, HEAL, PUSH, PULL, JUMP, LIGHT, STORM, SLEEP.',
+         'icon': 'minecraft:fire_charge', 'kind': 'passive', 'after': 'two_words', 'awakened': True, 'pos': (1.5, 0)},
+    ],
+}

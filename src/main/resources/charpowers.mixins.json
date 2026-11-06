@@ -1,0 +1,37 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.charpowers.mixin",
+  "refmap": "charpowers.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerPoseMixin",
+    "PlayerFluidMixin",
+    "SleepStatusMixin"
+  ],
+  "client": [
+    "MinecraftGlowMixin",
+    "AbstractClientPlayerMixin",
+    "PowersScreenMixin",
+    "PowersScreenTexturesMixin",
+    "PowerTabBackgroundMixin",
+    "PowerTabAccessor",
+    "PowersScreenAccessor",
+    "PowerTabMixin",
+    "TreePowerTabAccessor",
+    "TreePowerTabMixin",
+    "TreeAbilityWidgetMixin",
+    "ListPowerTabMixin",
+    "ListEntryMixin",
+    "BuyAbilityScreenMixin",
+    "IconButtonMixin",
+    "AbilityBarRendererMixin",
+    "SlotAccessor",
+    "HandsAwayMixin",
+    "GunHandsMixin",
+    "MouseHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+authors="Char"
+modId="charpowers"
+version="${file.jarVersion}"
+displayName="{C} Char's Powers"
+description='''
+Char's own power pack for Palladium. Part 1: hidden mob powers (F rank).
+Needed on the server AND on every player's PC.
+'''
+
+[[dependencies.charpowers]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.charpowers]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.charpowers]]
+modId="palladium"
+mandatory=true
+versionRange="[4.5,)"
+ordering="AFTER"
+side="BOTH"
+
+# only needed where clones are made (the server, or a PC playing singleplayer)
+[[dependencies.charpowers]]
+modId="curtain"
+mandatory=false
+versionRange="[1.3,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.charpowers]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.0,)"
+ordering="AFTER"
+side="BOTH"

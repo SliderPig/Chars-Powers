@@ -1,0 +1,126 @@
+{
+  "name": {
+    "translate": "power.charpowers.translation"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/translation.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "understand_mobs": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.understand_mobs"
+      },
+      "description": {
+        "translate": "ability.charpowers.understand_mobs.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/understand_mobs.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -1.5,
+        0
+      ]
+    },
+    "sad_lines": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.sad_lines"
+      },
+      "description": {
+        "translate": "ability.charpowers.sad_lines.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/sad_lines.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "understand_mobs"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:translation",
+            "level": 25
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        0
+      ]
+    },
+    "useful_lines": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.useful_lines"
+      },
+      "description": {
+        "translate": "ability.charpowers.useful_lines.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/useful_lines.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "sad_lines"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:translation",
+            "level": 50
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        0
+      ]
+    },
+    "choose_voices": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.choose_voices"
+      },
+      "description": {
+        "translate": "ability.charpowers.choose_voices.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/choose_voices.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "useful_lines"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:translation"
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        0
+      ]
+    }
+  }
+}

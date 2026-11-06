@@ -1,0 +1,123 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    // makes the "refmap" so mixins into Minecraft's own code find the right names in the real game
+    id 'org.spongepowered.mixin' version '0.7.+'
+}
+
+version = '3.0'
+group = 'com.example.charpowers'
+
+base {
+    archivesName = 'charpowers'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            mods {
+                charpowers {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+mixin {
+    add sourceSets.main, 'charpowers.refmap.json'
+    config 'charpowers.mixins.json'
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    // Palladium (and its core library) from the Powers profile. Only needed to compile: the real ones are in the game.
+    compileOnly fg.deobf('local:palladium:4.5.9+1.20.1-forge')
+    compileOnly fg.deobf('local:palladiumcore-forge:1.0.1+1.20.1-forge')
+    // Cloning's real-player clones. Only needed where clones are made, so it's not a required mod.
+    compileOnly fg.deobf('local:curtain-mc1.20.1:1.3.2')
+    // Green Lantern's constructs. Comes with the Powers pack anyway.
+    compileOnly fg.deobf('local:geckolib-forge-1.20.1:4.8.4')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// gradlew runGameTestServer -Psmoke: starts a real headless game with the mods and runs src/smoke. Never part of the jar.
+if (project.hasProperty('smoke')) {
+    sourceSets.main.java.srcDir 'src/smoke/java'
+    sourceSets.main.resources.srcDir 'src/smoke/resources'
+    minecraft.runs {
+        // gradlew runClient -Psmoke: the real game goes through everything you can see, takes screenshots and quits (ClientChecks)
+        client {
+            workingDirectory project.file('run-client')
+            property 'charpowers.smokeclient', 'true'
+            property 'forge.logging.console.level', 'info'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            jvmArg '-Xmx2500M'
+            mods {
+                charpowers {
+                    source sourceSets.main
+                }
+            }
+        }
+        gameTestServer {
+            workingDirectory project.file('run-smoke')
+            property 'forge.enabledGameTestNamespaces', 'charpowers'
+            property 'forge.logging.console.level', 'info'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            mods {
+                charpowers {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+    dependencies {
+        runtimeOnly fg.deobf('local:palladium:4.5.9+1.20.1-forge')
+        runtimeOnly fg.deobf('local:palladiumcore-forge:1.0.1+1.20.1-forge')
+        runtimeOnly fg.deobf('local:curtain-mc1.20.1:1.3.2')
+        runtimeOnly fg.deobf('local:geckolib-forge-1.20.1:4.8.4')
+    }
+}
+
+// A dedicated server only reads language files from data/, so the power names are copied there too
+// (otherwise /hiddenpower and Power Compat would print "power.charpowers.loud_meow" instead of "Loud Meow").
+processResources {
+    from('src/main/resources/assets/charpowers/lang') {
+        into 'data/charpowers/lang'
+    }
+}
+
+tasks.named('jar', Jar) {
+    manifest {
+        attributes([
+            'Specification-Title'   : 'charpowers',
+            'Specification-Version' : '1',
+            'Implementation-Title'  : project.name,
+            'Implementation-Version': project.jar.archiveVersion,
+            'MixinConfigs'          : 'charpowers.mixins.json'
+        ])
+    }
+}

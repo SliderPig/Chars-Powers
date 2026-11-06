@@ -1,0 +1,190 @@
+{
+  "name": {
+    "translate": "power.charpowers.death_steal"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/death_steal.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "steal_power": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.steal_power"
+      },
+      "description": {
+        "translate": "ability.charpowers.steal_power.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/steal_power.png"
+      },
+      "hidden_in_bar": true,
+      "gui_position": [
+        -2,
+        0
+      ]
+    },
+    "peek_one": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.peek_one"
+      },
+      "description": {
+        "translate": "ability.charpowers.peek_one.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/peek_one.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "steal_power"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:death_steal",
+            "level": 25
+          }
+        ]
+      },
+      "gui_position": [
+        -1,
+        0
+      ]
+    },
+    "peek_two": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.peek_two"
+      },
+      "description": {
+        "translate": "ability.charpowers.peek_two.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/peek_two.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "peek_one"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:death_steal",
+            "level": 75
+          }
+        ]
+      },
+      "gui_position": [
+        0,
+        0
+      ]
+    },
+    "steal_twice": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.steal_twice"
+      },
+      "description": {
+        "translate": "ability.charpowers.steal_twice.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/steal_twice.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "peek_two"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:death_steal",
+            "level": 90
+          }
+        ]
+      },
+      "gui_position": [
+        1,
+        0
+      ]
+    },
+    "see_all": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.see_all"
+      },
+      "description": {
+        "translate": "ability.charpowers.see_all.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/see_all.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "steal_twice"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:death_steal",
+            "level": 100
+          }
+        ]
+      },
+      "gui_position": [
+        2,
+        0
+      ]
+    },
+    "keep_theirs": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.keep_theirs"
+      },
+      "description": {
+        "translate": "ability.charpowers.keep_theirs.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/keep_theirs.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "see_all"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:death_steal"
+          }
+        ]
+      },
+      "gui_position": [
+        3,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "name": {
+    "translate": "power.charpowers.vocal_expression"
+  },
+  "icon": {
+    "type": "palladium:texture",
+    "texture": "charpowers:textures/icons/vocal_expression.png"
+  },
+  "gui_display_type": "tree",
+  "persistent_data": true,
+  "abilities": {
+    "speak": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.speak"
+      },
+      "description": {
+        "translate": "ability.charpowers.speak.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/speak.png"
+      },
+      "list_index": 0,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true,
+            "cooldown": 0
+          }
+        ]
+      },
+      "gui_position": [
+        -1.5,
+        0
+      ]
+    },
+    "hard_words": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.hard_words"
+      },
+      "description": {
+        "translate": "ability.charpowers.hard_words.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/hard_words.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "speak"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:vocal_expression",
+            "level": 50
+          }
+        ]
+      },
+      "gui_position": [
+        -0.5,
+        0
+      ]
+    },
+    "two_words": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.two_words"
+      },
+      "description": {
+        "translate": "ability.charpowers.two_words.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/two_words.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "hard_words"
+          },
+          {
+            "type": "charpowers:mastery_level",
+            "power": "charpowers:vocal_expression",
+            "level": 100
+          }
+        ]
+      },
+      "gui_position": [
+        0.5,
+        0
+      ]
+    },
+    "true_words": {
+      "type": "charpowers:passive",
+      "title": {
+        "translate": "ability.charpowers.true_words"
+      },
+      "description": {
+        "translate": "ability.charpowers.true_words.desc"
+      },
+      "icon": {
+        "type": "palladium:texture",
+        "texture": "charpowers:textures/icons/true_words.png"
+      },
+      "hidden_in_bar": true,
+      "conditions": {
+        "unlocking": [
+          {
+            "type": "palladium:ability_unlocked",
+            "power": "null",
+            "ability": "two_words"
+          },
+          {
+            "type": "charpowers:awakened",
+            "power": "charpowers:vocal_expression"
+          }
+        ]
+      },
+      "gui_position": [
+        1.5,
+        0
+      ]
+    }
+  },
+  "energy_bars": {
+    "breath": {
+      "max": 100,
+      "color": "#FF88C8"
+    }
+  }
+}

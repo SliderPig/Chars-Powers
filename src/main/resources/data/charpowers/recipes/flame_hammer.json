@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "VVV",
+    "VR ",
+    " R "
+  ],
+  "key": {
+    "V": {
+      "item": "palladium:vibranium_block"
+    },
+    "R": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "charpowers:flame_hammer"
+  }
+}

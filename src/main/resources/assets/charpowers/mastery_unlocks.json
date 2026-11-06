@@ -1,0 +1,160 @@
+{
+ "book_keeping": [
+  {
+   "level": 25,
+   "name": "Second Page"
+  },
+  {
+   "level": 50,
+   "name": "Third Page"
+  },
+  {
+   "level": 75,
+   "name": "Fourth Page"
+  },
+  {
+   "level": 100,
+   "name": "Fifth Page"
+  }
+ ],
+ "death_steal": [
+  {
+   "level": 25,
+   "name": "A Glimpse"
+  },
+  {
+   "level": 75,
+   "name": "A Longer Look"
+  },
+  {
+   "level": 90,
+   "name": "Twice Over"
+  },
+  {
+   "level": 100,
+   "name": "See Them All"
+  }
+ ],
+ "future_sight": [
+  {
+   "level": 50,
+   "name": "Rank Sense"
+  },
+  {
+   "level": 75,
+   "name": "Ore Glow"
+  },
+  {
+   "level": 100,
+   "name": "Ore Count"
+  }
+ ],
+ "game_player": [
+  {
+   "level": 25,
+   "name": "Raise Shadow"
+  },
+  {
+   "level": 25,
+   "name": "4 Daily Quests"
+  },
+  {
+   "level": 50,
+   "name": "5 Daily Quests"
+  },
+  {
+   "level": 75,
+   "name": "Second Story"
+  },
+  {
+   "level": 100,
+   "name": "Extra Skill Slot"
+  }
+ ],
+ "house_builder": [
+  {
+   "level": 100,
+   "name": "Inspect Castle"
+  }
+ ],
+ "necromancy": [
+  {
+   "level": 10,
+   "name": "Armed Zombies"
+  },
+  {
+   "level": 25,
+   "name": "Fast Arrows"
+  },
+  {
+   "level": 75,
+   "name": "Sun Proof"
+  }
+ ],
+ "superior_authority": [
+  {
+   "level": 25,
+   "name": "Freeze"
+  },
+  {
+   "level": 50,
+   "name": "Kneel"
+  },
+  {
+   "level": 75,
+   "name": "Look At Me"
+  },
+  {
+   "level": 100,
+   "name": "Attack"
+  }
+ ],
+ "the_miner": [
+  {
+   "level": 10,
+   "name": "Mine 3x3"
+  },
+  {
+   "level": 50,
+   "name": "Ore Ball"
+  },
+  {
+   "level": 75,
+   "name": "Mine 5x5"
+  }
+ ],
+ "time_control": [
+  {
+   "level": 25,
+   "name": "Hurry Up!"
+  },
+  {
+   "level": 50,
+   "name": "Let Time Flow"
+  },
+  {
+   "level": 100,
+   "name": "Time Block"
+  }
+ ],
+ "translation": [
+  {
+   "level": 25,
+   "name": "Sad Lines"
+  },
+  {
+   "level": 50,
+   "name": "Useful Lines"
+  }
+ ],
+ "vocal_expression": [
+  {
+   "level": 50,
+   "name": "Hard Words"
+  },
+  {
+   "level": 100,
+   "name": "Two Words"
+  }
+ ]
+}
